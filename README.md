@@ -1,5 +1,5 @@
 # VMinusMinus-Concept-Documentation
-Conceptualizing the V-- programming language.
+Conceptualizing a potential V-- programming language.
 
 ## What is V--?
 V-- is a language I conceptualized while working on a book about V programming. I felt like V was nearly perfect, but needed some simplification.
