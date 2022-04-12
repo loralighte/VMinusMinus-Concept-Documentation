@@ -12,28 +12,32 @@ An example of V:
 
 ```v
 fn main(){
-  place := "world"
-  if place == "world" {
-    println("Hello $place")
-  } else {
-    println("Goodbye, $place")
-  }
+	mut a := 0
+	mut b := 1
+	mut c := a + b
+	for a < 1000000 {
+		println(a)
+		a = b 
+		b = c 
+		c = a + b
+	}
 }
 ```
 
 That same example in V--:
 
 ```v
-fn main(){
-  place := "world"
-  if place == "world" {
-    out("Goodbye, %s", place)
-  } else {
-    out("Goodbye, %s", place)
-  }
+main {
+    mut a := 0
+    mut b := 1
+    mut c := a + b
+    for a < 1000000 {
+        vout << a
+        a = b 
+        b = c
+        c = a + b
+    }
 }
 ```
 
-V-- would essentially be a V library to add a ton of extra functionality. 
-
-That's all I have, because I need to work on this book.
+V-- is a simplified, C++ like version of V. Unlike C++, V-- would not be OOP.
